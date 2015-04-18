@@ -742,7 +742,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 	self.documentIsOpen = YES;
 	self.lastFileOpenDate = [NSDate new];
 	
-	if (!_isReadOnly) {
+	if (!_isReadOnly && !_presenter) {
 		_presenter = [[ULFilePresentationProxy alloc] initWithOwner: self];
 		[_presenter beginPresentationOnURL: url];
 	}
