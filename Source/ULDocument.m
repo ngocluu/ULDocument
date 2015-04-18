@@ -1020,7 +1020,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 - (NSFileWrapper *)fileWrapperWithError:(NSError **)outError
 {
 	NSAssert(NO, @"Neither -writeToURL:forSaveOperation:originalContentsURL:error: nor -fileWrapperWithError: have been overridden!");
-	return NO;
+	return nil;
 }
 
 - (BOOL)readFromURL:(NSURL *)url error:(NSError **)outError
