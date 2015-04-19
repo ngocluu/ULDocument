@@ -713,6 +713,11 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 	// Empty implementation
 }
 
+- (void)didSave
+{
+    // Empty implementation
+}
+
 - (void)didMoveToURL:(NSURL *)newURL
 {
 	// Empty implementation
@@ -772,6 +777,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 		
 		// Notify
 		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self didSave];
 			if (completionHandler)
 				completionHandler(success);
 		});

@@ -102,6 +102,11 @@ typedef enum : NSUInteger {
 - (void)didChangeFileURLBySaving;
 
 /*!
+ @abstract Notifies the subclass that the file has been saved.
+ */
+- (void)didSave;
+
+/*!
  @abstract Notifies the subclass that the file has been externally moved to another URL.
  */
 - (void)didMoveToURL:(NSURL *)newURL;
