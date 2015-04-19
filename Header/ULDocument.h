@@ -144,6 +144,11 @@ extern NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey;
  */
 @property(readonly) NSError *lastWriteError;
 
+/*!
+ @abstract Whether the document is deleted.
+ */
+@property(readonly) BOOL isDeleted;
+
 
 #pragma mark - Document lifecycle
 

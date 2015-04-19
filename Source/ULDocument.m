@@ -75,6 +75,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 
 @property(readwrite) BOOL isReadOnly;
 @property(readwrite) BOOL documentIsOpen;
+@property(readwrite) BOOL isDeleted;
 @property(readwrite) NSDate *fileModificationDate;
 @property(readwrite) NSDate *lastFileOpenDate;
 @property(readwrite) NSDate *changeDate;
@@ -1096,6 +1097,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 {
 	// Note the close and have the completion handler called. We won't write anything from this point on.
 	_deletionPending = YES;
+    self.isDeleted = YES;
 	if (completionHandler)
 		completionHandler(nil);
 	
