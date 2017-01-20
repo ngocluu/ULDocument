@@ -22,6 +22,8 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 /*!
  @abstract The kind of save operations known to ULDocument.
  

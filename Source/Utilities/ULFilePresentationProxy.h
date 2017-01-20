@@ -22,6 +22,8 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 /*!
  @abstract Simple object that proxies file presentation messages.
  @discussion Use this object to avoid the owner being retained by the file coordination system. Clients must make sure the usage is ended when owner goes away!

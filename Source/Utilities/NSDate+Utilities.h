@@ -22,6 +22,8 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface NSDate (Utilities)
 
 /*!

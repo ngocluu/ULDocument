@@ -22,6 +22,8 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 /*!
  @abstract Convenience methods for file system access.
  */

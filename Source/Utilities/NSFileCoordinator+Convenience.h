@@ -22,6 +22,8 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 /*!
  @abstract Helper methods and workarounds for common issues with NSFileCoordinator
  */
