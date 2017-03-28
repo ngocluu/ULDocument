@@ -14,6 +14,13 @@
 		691768931E32024B0073E0A0 /* NSURL+PathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917C4591920D19C00E57657 /* NSURL+PathUtilities.m */; };
 		691768941E32024B0073E0A0 /* ULFilePresentationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917C4431920D07B00E57657 /* ULFilePresentationProxy.m */; };
 		691768991E32035F0073E0A0 /* ULDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C46F1920DA4900E57657 /* ULDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69901B3F1E8A46DC00A63775 /* ULDocument_Subclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4701920DA4900E57657 /* ULDocument_Subclassing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69901B411E8A489C00A63775 /* ULDocument-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69901B401E8A489C00A63775 /* ULDocument-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69901B421E8A49A200A63775 /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4501920D19500E57657 /* NSDate+Utilities.h */; };
+		69901B431E8A49A200A63775 /* NSFileCoordinator+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4541920D19C00E57657 /* NSFileCoordinator+Convenience.h */; };
+		69901B441E8A49A200A63775 /* NSFileManager+FilesystemConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4561920D19C00E57657 /* NSFileManager+FilesystemConvenience.h */; };
+		69901B451E8A49A200A63775 /* NSURL+PathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4581920D19C00E57657 /* NSURL+PathUtilities.h */; };
+		69901B461E8A49A200A63775 /* ULFilePresentationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4421920D07B00E57657 /* ULFilePresentationProxy.h */; };
 		7917C4441920D07B00E57657 /* ULFilePresentationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7917C4421920D07B00E57657 /* ULFilePresentationProxy.h */; };
 		7917C4451920D07B00E57657 /* ULFilePresentationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917C4431920D07B00E57657 /* ULFilePresentationProxy.m */; };
 		7917C44B1920D08200E57657 /* ULDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917C4481920D08200E57657 /* ULDocument.m */; };
@@ -88,6 +95,8 @@
 		6917688A1E3202290073E0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		691768951E3202F50073E0A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		691768971E3203020073E0A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		69901B401E8A489C00A63775 /* ULDocument-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ULDocument-umbrella.h"; sourceTree = "<group>"; };
+		69901B471E8A4AAD00A63775 /* ULDocument.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = ULDocument.modulemap; sourceTree = "<group>"; };
 		7917C4421920D07B00E57657 /* ULFilePresentationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ULFilePresentationProxy.h; sourceTree = "<group>"; };
 		7917C4431920D07B00E57657 /* ULFilePresentationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ULFilePresentationProxy.m; sourceTree = "<group>"; };
 		7917C4481920D08200E57657 /* ULDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ULDocument.m; sourceTree = "<group>"; };
@@ -200,6 +209,8 @@
 			children = (
 				7917C46F1920DA4900E57657 /* ULDocument.h */,
 				7917C4701920DA4900E57657 /* ULDocument_Subclassing.h */,
+				69901B401E8A489C00A63775 /* ULDocument-umbrella.h */,
+				69901B471E8A4AAD00A63775 /* ULDocument.modulemap */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -307,6 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				691768991E32035F0073E0A0 /* ULDocument.h in Headers */,
+				69901B411E8A489C00A63775 /* ULDocument-umbrella.h in Headers */,
+				69901B3F1E8A46DC00A63775 /* ULDocument_Subclassing.h in Headers */,
+				69901B421E8A49A200A63775 /* NSDate+Utilities.h in Headers */,
+				69901B431E8A49A200A63775 /* NSFileCoordinator+Convenience.h in Headers */,
+				69901B441E8A49A200A63775 /* NSFileManager+FilesystemConvenience.h in Headers */,
+				69901B451E8A49A200A63775 /* NSURL+PathUtilities.h in Headers */,
+				69901B461E8A49A200A63775 /* ULFilePresentationProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +440,7 @@
 		79AC7CDE1920CE3300103E36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "The Soulmen";
 				TargetAttributes = {
 					691768861E3202290073E0A0 = {
@@ -569,7 +587,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -584,6 +602,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Header/ULDocument.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngocluu.ULDocument;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,7 +623,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -618,6 +637,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Header/ULDocument.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngocluu.ULDocument;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,7 +663,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -660,7 +680,7 @@
 				DYLIB_CURRENT_VERSION = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Other/ULDocument-iOS-Prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -686,7 +706,8 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Other/ULDocumentTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulmen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "";
@@ -707,7 +728,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Other/ULDocument-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Other/ULDocumentTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulmen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "";
@@ -729,13 +751,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -767,14 +795,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -824,6 +857,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Other/ULDocumentTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulmen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -842,6 +876,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Other/ULDocument-Mac-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Other/ULDocumentTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soulmen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -858,6 +893,7 @@
 				6917688D1E3202290073E0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7917C4E11920F6D400E57657 /* Build configuration list for PBXNativeTarget "ULDocument iOS" */ = {
 			isa = XCConfigurationList;

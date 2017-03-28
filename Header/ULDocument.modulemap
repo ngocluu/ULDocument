@@ -1,0 +1,6 @@
+framework module ULDocument {
+  umbrella header "ULDocument-umbrella.h"
+
+  export *
+  module * { export * }
+}
