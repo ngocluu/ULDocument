@@ -1047,7 +1047,7 @@ NSString *ULDocumentUnhandeledSaveErrorNotificationErrorKey			= @"error";
 	if (!wrapper)
 		return NO;
 	
-	return [wrapper writeToURL:url options:NSFileWrapperWritingWithNameUpdating|NSFileWrapperWritingAtomic originalContentsURL:originalURL error:outError];
+	return [wrapper writeToURL:url options:NSFileWrapperWritingWithNameUpdating originalContentsURL:originalURL error:outError];
 }
 
 - (NSURL *)preferredURL
