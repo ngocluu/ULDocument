@@ -22,6 +22,7 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "NSDate+Utilities.h"
 
 @implementation NSDate (Utilities)

@@ -22,6 +22,7 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "NSString+UniqueIdentifier.h"
 
 @implementation NSString (UniqueIdentifier)

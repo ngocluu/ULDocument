@@ -22,6 +22,7 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "NSFileCoordinator+Convenience.h"
 
 #import "NSURL+PathUtilities.h"

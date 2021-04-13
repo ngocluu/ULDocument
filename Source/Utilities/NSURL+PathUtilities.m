@@ -22,6 +22,7 @@
 //	THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "NSURL+PathUtilities.h"
 
 #import <objc/runtime.h>

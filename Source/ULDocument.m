@@ -22,6 +22,7 @@
 //	THE SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
 #import "ULDocument.h"
 #import "ULDocument_Subclassing.h"
 
